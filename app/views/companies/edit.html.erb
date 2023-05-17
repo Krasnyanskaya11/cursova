@@ -1,0 +1,19 @@
+<h1>Edit Company</h1>
+
+<%= form_for @company do |f| %>
+  <p>
+    <%= f.label :name ,"Назва компанії"%><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+
+  </p>
+  <%= render "form", company: @company %>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Показати зміни", @company %> |
+
+</div>

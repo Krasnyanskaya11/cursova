@@ -1,0 +1,12 @@
+<h1>Про компанію</h1>
+
+<p>
+  <strong>Назва:</strong>
+  <%= @company.name %>
+</p>
+
+<%= link_to 'Редагувати', edit_company_path(@company) %> |
+<%= link_to 'Відділи', company_departments_path(@company) %> |
+<%= link_to 'Повернутися до списку компаній', companies_path %>
+<br>
+<%= button_to 'Видалити комнанію', @company, method: :delete, data: { confirm: 'Are you sure?' } %>
